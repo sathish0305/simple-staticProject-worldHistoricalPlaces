@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: #7f7fd5;
+  background: linear-gradient(-45deg, #91eae4, #86a8e7, #7f7fd5);
+  background-size: 400%, 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+}
+
+.tag + .tag {
+  margin-left: 0.5em;
+}
+
+.tag-blue {
+  background: #56ccf2;
+  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #d1913c;
+  background: linear-gradient(to bottom, #ffd194, #d1913c);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.user {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
+}
+
+.navbar {
+  background: #7f7fd5;
+  background: linear-gradient(-45deg, #000080, #138808, #ffffff, #ff9933);
+  background-size: 400%, 400%;
+  animation: change 10s ease-in-out infinite;
+}
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  font-family: "Aboreto", cursive;
+  font-weight: bold;
+}
+
+.china {
+  background: #7f7fd5;
+  background: linear-gradient(-45deg, #ffff00, #ee1c25);
+  background-size: 400%, 400%;
+  animation: change 10s ease-in-out infinite;
+  background-color: transparent !important;
+}
+
+.italy {
+  background: #7f7fd5;
+  background: linear-gradient(-45deg, #cd212a, #f4f9ff, #008c45);
+  background-size: 400%, 400%;
+  animation: change 10s ease-in-out infinite;
+  background-color: transparent !important;
+}
+
+.srilanka {
+  background: #7f7fd5;
+  background: linear-gradient(
+    -45deg,
+    #8d153a,
+    #000000,
+    #00534e,
+    #eb7400,
+    #ffbe29
+  );
+  background-size: 400%, 400%;
+  animation: change 10s ease-in-out infinite;
+  background-color: transparent !important;
+}
+
+.germany {
+  background: #7f7fd5;
+  background: linear-gradient(-45deg, #ffcc00, #dd0000, #000000);
+  background-size: 400%, 400%;
+  animation: change 10s ease-in-out infinite;
+  background-color: transparent !important;
+}
+
+.spain {
+  background: #7f7fd5;
+  background: linear-gradient(-45deg, #f1bf00, #aa151b);
+  background-size: 400%, 400%;
+  animation: change 10s ease-in-out infinite;
+  background-color: transparent !important;
+}
+
+.russia {
+  background: #7f7fd5;
+  background: linear-gradient(-45deg, #e4181c, #1c3578, #ffffff);
+  background-size: 400%, 400%;
+  animation: change 10s ease-in-out infinite;
+  background-color: transparent !important;
+}

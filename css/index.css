@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+
+.card-title,
+.card-text {
+  color: white;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400%, 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+
+.card {
+  margin: 3px;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.navbar {
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #000046,
+    #1cb5e0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000046, #1cb5e0);
+}
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  font-family: "Aboreto", cursive;
+  font-weight: bold;
+}
+
+.imga {
+  height: 170px;
+  width: 100%;
+}
